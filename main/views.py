@@ -1,6 +1,5 @@
 import os
 import mimetypes
-from cv2 import exp
 from django.views import generic 
 from django.shortcuts import render
 from django.utils.translation import gettext as _
