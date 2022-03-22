@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 from django.utils.translation import gettext_lazy as _
 from pathlib import Path
 import os
+import django_heroku
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -142,4 +143,8 @@ EMAIL_HOST_PASSWORD = 'zicshiekhxibkiwl'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
+
+
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+django_heroku.settings(locals())
